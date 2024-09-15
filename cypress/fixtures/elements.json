@@ -1,0 +1,28 @@
+{
+  "buyTicket": ".page-wrapper  .fg-vcenter [href='https://www.dummyticket.com/dummy-ticket-for-visa-application/']",
+  "firstName": "#travname",
+  "lastName": "#travlastname",
+  "dateOfBirth": "#dob",
+  "sex": ".woocommerce-input-wrapper",
+  "sexType": "[name='sex']",
+  "travelType": "[name='traveltype']",
+  "fromCity": "#fromcity",
+  "toCity": "#tocity",
+  "depatureDate": "#departon",
+  "returnDate": "#returndate",
+  "purpose": "#reasondummy",
+  "phone": "#billing_phone",
+  "emailAddress": "#billing_email",
+  "country": "[aria-label='Country']",
+  "streetAddress":"#billing_address_1",
+  "town": "#billing_city",
+  "state": "#billing_state",
+  "checkoutProducts": "#checkout-products",
+  "billingCountry": "#billing_country",
+  "selectCountry": "#select2-billing_country-results",
+  "newState": "#billing_state_field .woocommerce-input-wrapper",
+  "pamentType": "#payment_method_yith-stripe",
+  "expiryDate": "#yith-stripe-card-expiry"
+  
+
+}
