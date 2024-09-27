@@ -29,6 +29,7 @@
             And I input the Expiration date
             And I input in the security code
             And I click on place order
+            Then I should get error message "Your card was declined. Your request was in live mode, but used a known test card."
 
            
 

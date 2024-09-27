@@ -73,35 +73,11 @@ When(/^I input the Expiration date$/, () => {
 
 });
 
-// When(/^I input the Credit card number$/, () => {
-
-// cy.get('a[href="https://js.stripe.com/v3/elements-inner-card-f2918a79cff512ac9f9752c215050427.html#wait=false&mids[guid]=NA&mids[muid]=e4e3d26f-587b-4245-8abb-ac168bd5dd28edb7c2&mids[sid]=NA&sh"]').should('be.visible').click()
-// cy.get('[title="Secure card number input frame"]').should('be.visible').wait(2000)
-// cy.get('[title="Secure card number input frame"]').checkIframe().find('[aria-label="Credit or debit card number"]').should('exist').click()
-// });
-
-// When(/^I input the Credit card number$/, () => {
-// 	cy.get('a[href="https://js.stripe.com/v3/elements-inner-card-f2918a79cff512ac9f9752c215050427.html#wait=false&mids[guid]=NA&mids[muid]=e4e3d26f-587b-4245-8abb-ac168bd5dd28edb7c2&mids[sid]=NA&showIcon=true&style[base][backgroundColor]=none&style[base][fontSize]=16px&style[base][color]=%23333&style[base][iconColor]=+%233399ff&style[base][fontFamily]=sans-serif&style[base][::placeholder][color]=%23000000&style[complete][color]=%23009124&style[invalid][iconColor]=%23e30000&style[invalid][color]=%23e30000&placeholder=%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2&rtl=false&componentName=cardNumber&keyMode=live&apiKey=pk_live_kOJ3VcoGKavzDeJsWKXiCmwo&referrer=https%3A%2F%2Fwww.dummyticket.com%2Fdummy-ticket-for-visa-application%2F&controllerId=__privateStripeController3501"]').should('be.visible').click()
-
-//     // Wait for the iframe to be visible
-//     cy.get('iframe[title="Secure card number input frame"]')
-//         .should('be.visible')
-//         .checkIframe()
-//         .then((body) => {
-//             // Wrap the iframe body to interact with elements inside the iframe
-//             cy.wrap(body)
-//                 .find('[aria-label="Credit or debit card number"]')
-//                 .should('exist')
-//                 .type('4242 4242 4242 4242', { force: true });
-//         });
-// });
 When(/^I input the Credit card number$/, () => {
 
-	cy.origin("https://js.stripe.com/v3/elements-inner-card-f2918a79cff512ac9f9752c215050427.html#wait=false&mids[guid]=NA&mids[muid]=e4e3d26f-587b-4245-8abb-ac168bd5dd28edb7c2&mids[sid]=NA&showIcon=true&style[base][backgroundColor]=none&style[base][fontSize]=16px&style[base][color]=%23333&style[base][iconColor]=+%233399ff&style[base][fontFamily]=sans-serif&style[base][::placeholder][color]=%23000000&style[complete][color]=%23009124&style[invalid][iconColor]=%23e30000&style[invalid][color]=%23e30000&placeholder=%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2+%E2%80%A2%E2%80%A2%E2%80%A2%E2%80%A2&rtl=false&componentName=cardNumber&keyMode=live&apiKey=pk_live_kOJ3VcoGKavzDeJsWKXiCmwo&referrer=https%3A%2F%2Fwww.dummyticket.com%2Fdummy-ticket-for-visa-application%2F&controllerId=__privateStripeController3501", () => {
-		cy.get('iframe[title="Secure card number input frame"]')
-		        .should('be.visible')
-		      ;
+cy.get('a[href="https://js.stripe.com/v3/elements-inner-card-f2918a79cff512ac9f9752c215050427.html#wait=false&mids[guid]=NA&mids[muid]=e4e3d26f-587b-4245-8abb-ac168bd5dd28edb7c2&mids[sid]=NA&sh"]').should('be.visible').click()
+cy.get('[title="Secure card number input frame"]').should('be.visible').wait(2000)
+cy.get('[title="Secure card number input frame"]').checkIframe().find('div#yith-stripe-card-number').should('exist').click()
+});
 
-});
-});
 
